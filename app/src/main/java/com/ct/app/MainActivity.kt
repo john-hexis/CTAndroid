@@ -2,7 +2,7 @@ package com.ct.app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ct.app.ui.login.LoginFragment
+import com.ct.app.scene.login.LoginFragment
 
 class MainActivity : AppCompatActivity() {
 

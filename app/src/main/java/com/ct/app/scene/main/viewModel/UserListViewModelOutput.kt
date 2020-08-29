@@ -1,7 +1,7 @@
-package com.ct.app.ui.main.viewModel
+package com.ct.app.scene.main.viewModel
 
 import androidx.lifecycle.MutableLiveData
-import com.ct.app.guide.IViewModelOutput
+import com.ct.guide.IViewModelOutput
 
 interface UserListViewModelOutput: IViewModelOutput {
     var users: MutableLiveData<List<String>>

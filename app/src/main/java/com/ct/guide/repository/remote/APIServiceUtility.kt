@@ -19,8 +19,7 @@ class APIServiceUtility<T>() where T : IAPIService {
     }
 
     internal fun create(service: Class<T>): T {
-        val serviceBaseUrl = (service as IAPIService).baseUrl
-        val httpUrl = serviceBaseUrl.toHttpUrlOrNull()
+        val httpUrl = BuildConfig.BaseUrl.toHttpUrlOrNull()
         val logger = HttpLoggingInterceptor(object : HttpLoggingInterceptor.Logger {
             override fun log(message: String) {
                 Log.d("API", message)

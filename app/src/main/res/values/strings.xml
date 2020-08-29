@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CT</string>
+    <string name="login">Login</string>
+    <string name="type_your_username">Type your Username</string>
+    <string name="password">Password</string>
+    <string name="type_your_password">Type your password</string>
+    <string name="submit">Submit</string>
 </resources>

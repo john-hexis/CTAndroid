@@ -1,4 +1,4 @@
-package com.ct.app.ui.main
+package com.ct.app.scene.main
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.MutableLiveData
 import com.ct.app.R
-import com.ct.app.guide.IFragment
-import com.ct.app.ui.main.viewModel.UserListViewModel
-import com.ct.app.ui.main.viewModel.UserListViewModelOutput
+import com.ct.guide.IFragment
+import com.ct.app.scene.main.viewModel.UserListViewModel
+import com.ct.app.scene.main.viewModel.UserListViewModelOutput
 
 class MainFragment : Fragment(), IFragment, UserListViewModelOutput {
 
