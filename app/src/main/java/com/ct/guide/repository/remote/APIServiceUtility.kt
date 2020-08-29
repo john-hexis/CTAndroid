@@ -1,4 +1,4 @@
-package com.ct.guide.repository.service
+package com.ct.guide.repository.remote
 
 import android.util.Log
 import com.ct.app.BuildConfig

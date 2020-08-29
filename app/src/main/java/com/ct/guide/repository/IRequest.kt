@@ -1,4 +1,4 @@
-package com.ct.repository
+package com.ct.guide.repository
 
 interface IRequest {
 }

@@ -1,4 +1,4 @@
-package com.ct.guide.repository.service
+package com.ct.guide.repository.remote
 
 interface IAPIService {
     val baseUrl: String

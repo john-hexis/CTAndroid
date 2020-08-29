@@ -1,2 +1,3 @@
-package com.ct.guide.repository
+package com.ct.guide.repository.remote
 
+interface IRemoteDataSource {}
