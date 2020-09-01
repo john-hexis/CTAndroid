@@ -10,4 +10,8 @@ interface IMainActivity {
     fun main_showToast(message: String)
     fun main_gotoDetail(id: Int)
     //endregion
+
+    //region Detail
+    fun detail_showToast(message: String)
+    //endregion
 }

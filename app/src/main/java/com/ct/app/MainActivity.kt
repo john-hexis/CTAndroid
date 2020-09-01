@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.widget.Toast
+import com.ct.app.scene.detail.DetailFragment
 import com.ct.app.scene.login.LoginFragment
 import com.ct.app.scene.main.MainFragment
 
@@ -38,8 +39,12 @@ class MainActivity : AppCompatActivity(), IMainActivity {
     override fun main_gotoDetail(id: Int) {
         supportActionBar?.show()
         supportFragmentManager.beginTransaction()
-            .replace(R.id.container, MainFragment.newInstance(this))
+            .replace(R.id.container, DetailFragment.newInstance(this, id))
             .commitNow()
+    }
+
+    override fun detail_showToast(message: String) {
+        showToast(message)
     }
 
     private fun showToast(message: String) {

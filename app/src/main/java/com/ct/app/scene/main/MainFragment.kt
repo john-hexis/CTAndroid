@@ -65,9 +65,11 @@ class MainFragment(private val mainActivity: IMainActivity) : Fragment(), IFragm
         recyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         this.disposableBag.add(
             userListAdapter.onClick
-                .subscribe { holder ->
+                .subscribe ({ holder ->
                     mainActivity.main_gotoDetail(holder.id)
-                }
+                }, { error ->
+                    mainActivity.main_showToast(error.localizedMessage)
+            })
         )
         this.userListUseCase.getUserList(userViewModel)
     }
