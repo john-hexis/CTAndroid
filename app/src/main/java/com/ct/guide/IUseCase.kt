@@ -1,5 +1,7 @@
 package com.ct.guide
 
-interface IUseCase {
+import com.ct.guide.repository.BaseRepository
 
+interface IUseCase {
+    fun defineRepository(repositories:List<BaseRepository>)
 }
