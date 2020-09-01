@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -10,6 +10,11 @@
     <style name="commonLabel">
         <item name="fontFamily">monospace</item>
         <item name="android:textSize">16sp</item>
+        <item name="color">#3C3C3C</item>
+    </style>
+    <style name="commonSmallLabel">
+        <item name="fontFamily">monospace</item>
+        <item name="android:textSize">12sp</item>
         <item name="color">#3C3C3C</item>
     </style>
 
@@ -31,10 +36,14 @@
 
     <style name="commonContainedButton" parent="Widget.MaterialComponents.Button">
         <item name="color">@color/common_contained_button_text_color</item>
-        <item name="backgroundTint">@color/common_contained_button_color</item>
+        <item name="backgroundColor">@color/common_contained_button_color</item>
         <item name="fontFamily">monospace</item>
         <item name="android:textSize">20sp</item>
         <item name="fontStyle">normal</item>
         <item name="fontWeight">800</item>
+    </style>
+
+    <style name="commonCellCard">
+        <item name="backgroundColor">@color/colorGreyCell</item>
     </style>
 </resources>

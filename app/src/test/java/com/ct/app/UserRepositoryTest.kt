@@ -27,11 +27,7 @@ class UserRepositoryTest {
         context = RuntimeEnvironment.application.applicationContext //InstrumentationRegistry.getInstrumentation().targetContext
         userRepository =
             UserRepository(
-                UserRemoteDataSource(
-                    APIServiceUtility.newInstance<UserAPIService>().create(
-                        UserAPIService::class.java
-                    )
-                ),
+                UserRemoteDataSource(),
                 UserLocalDataSource(UserDB.getDatabase(context).userDao())
             )
     }

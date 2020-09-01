@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.ct.app.repository.model.User
 
-@Database(entities = [User::class], version = 1)
+@Database(entities = [User::class], version = 2)
 abstract class UserDB : RoomDatabase() {
 
     abstract fun userDao(): UserDAO

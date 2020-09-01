@@ -1,3 +1,7 @@
 package com.ct.guide
 
-interface IViewModelOutput {}
+import androidx.lifecycle.MutableLiveData
+
+interface IViewModelOutput {
+    var errorMessage: MutableLiveData<String>
+}

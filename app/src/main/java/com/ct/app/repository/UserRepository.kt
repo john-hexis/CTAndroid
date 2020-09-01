@@ -49,4 +49,9 @@ class UserRepository(private val remote: IUserRemoteDataSource?, private val loc
             ?: run { Single.error(Error("Local isn't initialized in user repository.")) }
     }
 
+    override fun saveUserDefault(userId: Int, username: String): Single<Boolean> {
+        return this.local?.let { this.local?.saveUser(User(userId, "John Harries", username, "123456", "", null, "", "", null)) }
+            ?: run { Single.error(Error("Local isn't initialized in user repository.")) }
+    }
+
 }

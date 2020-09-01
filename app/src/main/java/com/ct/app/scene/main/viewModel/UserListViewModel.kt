@@ -5,11 +5,8 @@ import androidx.lifecycle.ViewModel
 import com.ct.guide.IViewModel
 import com.ct.guide.IViewModelOutput
 
-class UserListViewModel(
-    var ID: MutableLiveData<String>
+data class UserListViewModel(
+    override var output: IViewModelOutput?
 ) : ViewModel(), IViewModel {
-    private lateinit var vmOutput: UserListViewModelOutput
-    override var output: IViewModelOutput
-        get() = vmOutput
-        set(value) { vmOutput = value as UserListViewModelOutput }
+    constructor(): this(null)
 }

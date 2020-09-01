@@ -1,4 +1,8 @@
 package com.ct.app.scene.login.viewModel
 
-interface AuthLoginViewModelOutput {
+import androidx.lifecycle.MutableLiveData
+import com.ct.guide.IViewModelOutput
+
+interface AuthLoginViewModelOutput: IViewModelOutput {
+    var authStatus: MutableLiveData<AuthenticationStatus>
 }
